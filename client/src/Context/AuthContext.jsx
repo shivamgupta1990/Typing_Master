@@ -2,10 +2,10 @@ import { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
 
 
-const AuthContext = createContext();
+export const AuthContext = createContext();
 
 
- const AuthProvider = ({ children }) => {
+export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
    const checkUserLoggedIn = async () => {
@@ -45,4 +45,3 @@ const AuthContext = createContext();
   );
 };
 
-export { AuthContext, AuthProvider };
