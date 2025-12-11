@@ -34,5 +34,5 @@ app.use('/', (req, res) => {
 const port = process.env.PORT || 5089;
 
 app.listen(port, () => {
- console.log(`Server is listening on http://localhost:${port}`);
+ console.log(`Server is listening on ${port}`);
 });

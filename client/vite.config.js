@@ -11,11 +11,11 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [react(), tailwindcss()],
     server: {
-      port: 5181,
+      port: 3000,
       proxy: {
         '/api': {
           // 2. Access the variable from the loaded 'env' object
-          target: env.BACKEND_URL || 'http://localhost:5089', 
+          target: env.BACKEND_URL || 'http://localhost:5000', 
           changeOrigin: true,
         },
       }
