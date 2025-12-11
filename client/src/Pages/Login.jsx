@@ -1,9 +1,9 @@
 import { useState, useContext, useEffect } from 'react';
-import { useNavigate, Link } from 'react-router-dom'; // 1. Import Link
+import { useNavigate, Link } from 'react-router-dom'; 
 import axios from 'axios';
 import Input from '../Components/Input.jsx'
 import Button from '../Components/Button.jsx';
-import  { AuthContext }  from '../context/AuthContext.jsx';
+import  { AuthContext }  from '../Context/AuthContext.jsx';
 
 const Login = () => {
   const [formData, setFormData] = useState({
