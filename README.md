@@ -60,10 +60,10 @@ npm install
 
 Create a `.env` file in the `backend` directory:
 ```env
-PORT=10000
+PORT=5000
 MONGO_URL=mongodb://localhost:27017/
 JWT_SECRET=your_jwt_secret_key_here
-FRONTEND_URL=http://localhost:5181
+FRONTEND_URL=http://localhost:3000
 EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_password_here
 ```
@@ -235,7 +235,7 @@ The application uses JWT (JSON Web Tokens) for authentication. After successful 
 ## 📝 Environment Variables
 
 ### Backend (.env)
-- `PORT` - Server port (default: 10000)
+- `PORT` - Server port (default: 5000)
 - `MONGO_URL` - MongoDB connection string
 - `JWT_SECRET` - Secret key for JWT tokens
 - `FRONTEND_URL` - Frontend URL for CORS and redirects
